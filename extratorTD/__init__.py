@@ -57,6 +57,7 @@ def login(driver):
     user_wait.until(EC.url_to_be('https://portalinvestidor.tesourodireto.com.br/MeusInvestimentos'))
 
 def getBrokers(driver):
+    # TODO - Get brokers and treasuries from MeusInvestimentos page
 
     brokerList = {}
 
@@ -78,6 +79,9 @@ def getBrokers(driver):
 
     return brokerList
 
+def getBondList(driver, brokerList):
+    # TODO - Get brokers and treasuries from MeusInvestimentos page
+    pass
 
 def getData(driver, brokerList):
     pass
